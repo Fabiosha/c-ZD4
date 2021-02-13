@@ -1,0 +1,54 @@
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+const int a=7, b=5;
+int main()
+{
+	setlocale(LC_ALL, "ru");
+	
+	// Задание №1
+	int x1, y1;
+	x1 = 2; y1 = 11;
+	if (x1 + y1 < 10)
+	{
+		cout << "false" << endl;
+	}
+	else if (x1 + y1 > 20)
+	{
+		cout << "false" << endl;
+	}
+	else
+	{
+		cout << "true" << endl;
+	}
+
+	//Задача №2
+	int number, rez;
+	rez = 0;
+	cout << "enter number for chek" << endl;
+	cin >> number;
+
+
+	for (int i = 2; i <= number / 2; i++) {
+
+		if (number % i == 0)
+		{
+			rez = +1;
+		}
+	}
+	if (rez = 1)
+	
+		cout << "число простое" << endl;
+	
+	else  cout << "Число не простое" << endl;
+	
+	//Задание №3
+	if (b + a == 10) { cout << "Истина" << endl; }
+	else if (a==10) { cout << "Истина" << endl; }
+	else if (b==10) { cout << "Истина" << endl; }
+	else { cout << "Ложь" << endl; }
+
+	system("pause");
+    return 0;
+}
